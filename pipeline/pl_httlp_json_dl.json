@@ -29,7 +29,8 @@
 					"dataset": {
 						"referenceName": "ds_json_file_list",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			}
 		],
