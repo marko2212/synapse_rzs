@@ -1,0 +1,29 @@
+{
+	"name": "ds_json_file_list",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_dl_dlg2storeacc",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "open_data_file_list.json",
+				"container": "raw"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"sourceRelativeURL": {
+					"type": "string"
+				},
+				"sinkFileName": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
